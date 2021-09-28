@@ -1,0 +1,85 @@
+@startuml
+
+interface Linable{
+    setPosition()
+    getPosition()
+    getValue()
+}
+
+interface Sorter{
+    load()
+    sort()
+    getPlan()
+}
+
+class Monster{
+    int r
+    int g
+    int b
+    int numrank
+    Position position
+
+    rank()
+    swapPosition()
+}
+
+class Position{
+    Monster monster
+
+    setLinable()
+}
+
+class Line {
+    Position[] positions
+    
+    put()
+    get()
+    toArray()
+}
+
+class Matrix
+
+class Snake{
+    Snake theSnake
+    Sorter sorter
+
+    getTheSnaker()
+    setSorter()
+    lineUp()
+    parsePlan()
+    execute()
+}
+
+class BubbleSorter{
+    int[] a
+    String plan
+
+    swap()
+}
+
+class QuickSorter{
+    int[] a
+    String plan
+
+    swap()
+}
+class ShellSorter{
+    int[] a
+    String plan
+
+    swap()
+}
+
+Monster ..|> Linable
+
+Matrix --|> Line
+
+BubbleSorter ..|> Sorter
+
+QuickSorter ..|> Sorter
+
+ShellSorter ..|> Sorter
+
+Line --* Position
+
+@enduml

@@ -1,0 +1,46 @@
+@startuml
+actor       老头   as geezer    #Black 
+actor       葫芦兄弟    as calabash_bro   #Purple 
+entity      队伍  as line #White
+entity      排队器  as sorter #White
+entity      排序方案    as plan #White
+entity      操作日志    as log #White
+entity      记录器  as writer #White
+
+line -[#Green]> line : 列队
+
+calabash_bro -[#Blue]> line : 入队
+
+geezer -[#Green]> geezer : 出场
+
+sorter -[#Green]> sorter : 装载——冒泡排序法
+
+sorter -[#Grey]> plan : 初始化排序方案
+
+geezer -[#Blue]> sorter : 获取排队器
+
+geezer -[#Blue]> line : 开始排序
+
+geezer -[#Blue]> log : 初始化排序方案
+
+sorter -[#Grey]> calabash_bro : 装载队列顺序
+
+sorter -[#Green]> sorter : 排序
+
+sorter -[#Grey]> plan : 生成排序方案
+
+geezer -[#Blue]> plan : 获取排序方案
+
+geezer -[#Blue]> calabash_bro : 按排序方案逐个交换队列顺序
+
+geezer -[#Blue]> log : 记录操作日志
+
+writer -[#Green]> writer : 打开文件
+
+writer -[#Grey]> log : 获取操作日志
+
+writer -[#Green]> writer : 将日志写入文件
+
+writer -[#Green]> writer : 关闭文件
+
+@enduml
