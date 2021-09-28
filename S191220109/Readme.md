@@ -27,11 +27,11 @@ S191220109.task2类图（建模）如下：
 
 可视化结果展示链接:
 (1)冒泡排序
-![](https://asciinema.org/a/438475)
+[![asciicast](https://asciinema.org/a/438475.svg)](https://asciinema.org/a/438475)
 (2)希尔排序
-![](https://asciinema.org/a/438471)
+[![asciicast](https://asciinema.org/a/438471.svg)](https://asciinema.org/a/438471)
 (3)快速排序
-![](https://asciinema.org/a/438339)
+[![asciicast](https://asciinema.org/a/438339.svg)](https://asciinema.org/a/438339)
 
 ## 任务三
 代码主要改动：添加Line的继承类Matrix类，重载toString函数，实现换行输出。
@@ -40,8 +40,8 @@ S191220109.task3类图（建模）如下：
 
 可视化结果展示链接:
 (1)冒泡排序
-![](https://asciinema.org/a/438484)
+[![asciicast](https://asciinema.org/a/438484.svg)](https://asciinema.org/a/438484)
 (2)希尔排序
-![](https://asciinema.org/a/438482)
+[![asciicast](https://asciinema.org/a/438482.svg)](https://asciinema.org/a/438482)
 (3)快速排序
-![](https://asciinema.org/a/438479)
+[![asciicast](https://asciinema.org/a/438479.svg)](https://asciinema.org/a/438479)
